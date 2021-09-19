@@ -1,0 +1,24 @@
+.ContMenu{
+    display: grid;
+
+    button.btnMenu{
+        z-index: 3;
+    }
+
+    .menu {
+        width: 100%;
+        /* max-width: 350px; */
+        height: 100vh;
+        display: block;
+        position: fixed;
+        background: #ccc;
+        top: 35vh;
+        left: -100%;
+        z-index: 2;
+        transition: all .2s ease-out;
+        &--open {
+          left: 0;
+        }
+    }
+
+}
