@@ -1,8 +1,26 @@
+@import '../scss/variables';
+
 .ContMenu{
     display: grid;
 
-    button.btnMenu{
+    .btnMenu{
+        cursor: pointer;
         z-index: 3;
+        background-image: url('../images/barras.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 2.5rem;
+        height: 1rem;
+        margin: 1rem;
+        transition: all .2s ease-out;
+        &--open{
+            background-image: url('../images/arrowBack.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 2.5rem;
+            height: 1rem;
+            margin: 1rem;
+        }
     }
 
     .menu {
@@ -11,13 +29,41 @@
         height: 100vh;
         display: block;
         position: fixed;
-        background: #ccc;
+        background: $azul;
         top: 35vh;
         left: -100%;
         z-index: 2;
         transition: all .2s ease-out;
         &--open {
           left: 0;
+        }
+        li {
+            color: white;
+            font-size: 1rem;
+            margin: 2rem 0 1rem 0;
+        }
+    }
+
+    .contItem{
+        display: grid;
+        grid-template-columns: 1rem 1fr;
+        grid-gap: 1rem;
+        cursor: pointer;
+        .bullet {
+            background-color: $azul;
+            height: 1px;
+            margin: 2rem 0 1rem 0;
+            align-self: center;
+        }
+        &:hover{
+            .bullet{
+                background-color: $aguaMarina;
+            }
+        }
+        &:focus{
+            .bullet{
+                background-color: $aguaMarina;
+            }
         }
     }
 
