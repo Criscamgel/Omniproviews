@@ -1,4 +1,5 @@
 @import '../scss/variables';
+@import '../scss/mixins';
 
 .ContMenu{
     display: grid;
@@ -34,6 +35,24 @@
         left: -100%;
         z-index: 2;
         transition: all .2s ease-out;
+
+        @include smallTablet() {
+            width: 350px;
+            top: 0vh;
+          }
+          @include tabletLaptop{
+            width: 350px;
+            top: 0vh;
+          }
+          @include laptopDesktop{
+            width: 350px;
+            top: 0vh;
+          }
+          @include desktopFull{
+            width: 350px;
+            top: 0vh;
+          }
+
         &--open {
           left: 0;
         }

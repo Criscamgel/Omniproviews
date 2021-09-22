@@ -1,5 +1,6 @@
 @import './scss/fonts';
 @import './scss/variables';
+@import './scss/mixins';
 
 body {
   margin: 0;
@@ -19,6 +20,24 @@ body {
     left: 0px;
     opacity: 0.75;
     z-index: -1;
+  }
+}
+
+//Marckup
+.contenedorForm{
+  display: grid;
+  grid-template-columns: 2% 96% 2%;
+  @include smallTablet() {
+    grid-template-columns: 20% 60% 20%;
+  }
+  @include tabletLaptop{
+    grid-template-columns: 20% 60% 20%;
+  }
+  @include laptopDesktop{
+    grid-template-columns: 25% 50% 25%;
+  }
+  @include desktopFull{
+    grid-template-columns: 30% 40% 30%;
   }
 }
 
@@ -51,3 +70,150 @@ li{
   align-self: center;
   justify-self: right;
 }
+
+
+// Field and Inputs
+input[type=text], input[type=password], input[type=email]{
+  background-color: transparent;
+}
+
+.material-form-field{
+  font-family: 'Roboto', sans-serif;
+  font-size:14px;
+  position:relative;
+  display:block;
+  color:$material-form-label;
+  padding:$material-labelOffset 0 10px 0;
+
+  &::after{
+    content:"\00A0";
+    display:block;
+    color: $material-form-field-invalid-foreground;
+    font-size:12px;
+    padding-top:0px;
+  }
+
+  .material-form-field-label{
+    position:absolute;
+    display:block;
+    top: 0.5rem;
+    left: 0px;
+    pointer-events:none;
+    cursor:text;
+  }
+
+  input{
+    padding:$material-textInputPaddingTopBottom 0 $material-textInputPaddingTopBottom 0;
+    display:block;
+    width:100%;
+    border:none;
+    font-size:14px;
+    color: white;
+    border-bottom:1px solid white;
+    outline:none;
+
+    &:invalid{
+      outline:none;
+      box-shadow: none;
+    }    
+    
+  }
+
+  &.material-form-field-invalid{
+    color: $material-form-field-invalid-foreground;
+    &::after{
+      content:attr(data-validationError);
+    }
+    input:focus ~ .material-form-field-label{
+      color: $material-form-field-invalid-foreground;
+    }
+  }
+}
+
+//Switch
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 12px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #9692AE;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: -5px;
+  bottom: -5px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.contSwitch {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-gap: 1rem;
+  p{
+    color: $blanco;
+  }
+}
+
+.btnSubmit{
+  background: linear-gradient(90deg, #8DE7ED 2.31%, #2FCEC5 100%);
+  border-radius: 24px;
+  color: $blanco;
+  width: 100%;
+  outline: none;
+  border: none;
+  height: 2rem;
+  margin: 1rem 0;
+}
+
+.linkParrafo{
+  color: $blanco;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+

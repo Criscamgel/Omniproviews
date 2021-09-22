@@ -1,3 +1,18 @@
 $azul: #393FD0;
 $aguaMarina: #2FCDC4;
 $azulOscuro: #3A3061;
+$transOscuro: #1e1e1e42;
+$blanco: #ffffff;
+
+$material-form-label: $blanco;
+$material-form-label-focus: $aguaMarina;
+$material-form-line: $blanco;
+$material-form-line-focus: $material-form-label-focus;
+$material-form-input-text: $material-form-label;
+$material-form-input-text-focus: $material-form-label-focus;
+$material-form-field-invalid-foreground: #d50000;
+
+$material-dropdown-hoverBackground: #e8eaf6;
+$material-dropdown-selectedBackground: #9fa8da;
+$material-labelOffset: 20px;
+$material-textInputPaddingTopBottom: 10px;

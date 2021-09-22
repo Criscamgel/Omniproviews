@@ -7,7 +7,11 @@ export const App = () => {
   return (
     <>
       <Encabezado />
-      <Tabs />
+      <div className="contenedorForm">
+        <div className=""></div>
+          <Tabs />
+        <div className=""></div>
+      </div>
     </>
   )
 }
