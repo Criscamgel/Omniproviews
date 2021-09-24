@@ -12,6 +12,15 @@
       right: 0px;
       bottom: 0px;
       left: 0px;
+      @include tabletLaptop{
+        background-image: none;
+      }
+      @include laptopDesktop{
+        background-image: none;
+      }
+      @include desktopFull{
+        background-image: none;
+      }
   }
 
 //Marckup
