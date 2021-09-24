@@ -18,6 +18,22 @@ button{
 }
 
 .contProducto{
+    @include smallTablet() {
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+      }
+    @include tabletLaptop() {
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+      }
+    @include laptopDesktop() {
+        display: grid;
+        grid-template-columns: 30% 40% 30%;
+      }
+    @include desktopFull() {
+        display: grid;
+        grid-template-columns: 30% 40% 30%;
+      }
     .imageProducto{
         width: 100%;
     }
