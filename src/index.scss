@@ -216,3 +216,9 @@ input:checked + .slider:before {
   font-weight: bold;
 }
 
+.notSmall{
+  @include Asmall() {
+    display: none;
+  }
+}
+

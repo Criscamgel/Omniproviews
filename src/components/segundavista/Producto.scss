@@ -22,7 +22,7 @@ button{
         width: 100%;
     }
     .contenidoSecUno{
-        margin: 0.7rem 0;
+        margin: 0.7rem 0rem;
 
     .contDescripcion{
         p{
@@ -58,6 +58,7 @@ hr{
 
 
 .contenidoSecDos{
+    margin: 0 1rem;
 .btnTamano{
     display: grid;
     grid-template-columns: 30% 70%;
@@ -96,6 +97,8 @@ hr{
     margin: 10px 0;
 }
 
+.contenidoSecTres{
+    margin: 0 1rem;
 .contDescripcionFull{
     .tituloDescripcionFull{
         font-size: 1.2rem;
@@ -139,6 +142,7 @@ hr{
             margin: 5px;
         }
     }
+}
 }
 
 

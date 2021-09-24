@@ -12,6 +12,8 @@ export const Producto = () => {
     return (
         <>
           <div className="contProducto">
+              <div className="side notSmall"></div>
+              <div className="contenidoProducto">
               <div className="contImage">
                   <img className="imageProducto" src={imagenProducto} alt="" />
               </div>
@@ -64,9 +66,10 @@ export const Producto = () => {
                 <p  className="valueDesc leftGrid">CANTIDAD</p>
                 <img src={stepper} alt="" />
                 </div>
-            </div>
             <button className="secondary marginSectionButtons fullWidth">AÑADIR AL CARRITO</button>
+            </div>
             <hr />
+            <div className="contenidoSecTres">
             <div className="contDescripcionFull">
                 <p className="tituloDescripcionFull">
                 Descripción 
@@ -86,6 +89,9 @@ export const Producto = () => {
                     <img src={productoDos} alt="" />
                 </div>
             </div>
+            </div>
+            </div>
+            <div className="side notSmall"></div>
           </div>  
         </>
     )
