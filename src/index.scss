@@ -2,26 +2,17 @@
 @import './scss/variables';
 @import './scss/mixins';
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: $azul;
-  &:before {
-    content: "";
-    background-image: url('../src/images/bg.svg');
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.75;
-    z-index: -1;
+.contenedorPrimeraVista {
+      background-color: $azul;
+      background-image: url('../src/images/bg.svg');
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
   }
-}
 
 //Marckup
 .contenedorForm{
@@ -41,17 +32,18 @@ body {
   }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 *{
-  font-family: 'Netto';
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   transition: all 0.5s;
+}
+
+.contenedorPrimeraVista{
+  font-family: 'Dosis' !important;
+}
+.contenedorSegundaVista{
+  font-family: 'ProximaNova' !important;
 }
 
 li{
@@ -78,7 +70,6 @@ input[type=text], input[type=password], input[type=email]{
 }
 
 .material-form-field{
-  font-family: 'Roboto', sans-serif;
   font-size:14px;
   position:relative;
   display:block;
@@ -215,5 +206,13 @@ input:checked + .slider:before {
   color: $blanco;
   text-align: center;
   padding-bottom: 0.5rem;
+}
+
+.fullWidth{
+  width: 100%;
+}
+
+.fontBold{
+  font-weight: bold;
 }
 

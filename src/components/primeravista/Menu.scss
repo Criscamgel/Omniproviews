@@ -1,5 +1,5 @@
-@import '../scss/variables';
-@import '../scss/mixins';
+@import '../../scss/variables';
+@import '../../scss/mixins';
 
 .ContMenu{
     display: grid;
@@ -7,7 +7,7 @@
     .btnMenu{
         cursor: pointer;
         z-index: 3;
-        background-image: url('../images/barras.svg');
+        background-image: url('../../images/barras.svg');
         background-size: cover;
         background-repeat: no-repeat;
         width: 2.5rem;
@@ -15,7 +15,7 @@
         margin: 1rem;
         transition: all .2s ease-out;
         &--open{
-            background-image: url('../images/arrowBack.svg');
+            background-image: url('../../images/arrowBack.svg');
             background-size: cover;
             background-repeat: no-repeat;
             width: 2.5rem;

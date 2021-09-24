@@ -1,17 +1,11 @@
 import React from 'react';
 import './App.scss';
-import { Encabezado } from './components/Encabezado';
-import { Tabs } from './components/Tabs';
+import { AppRouter } from './routes/AppRouter';
 
 export const App = () => {
   return (
     <>
-      <Encabezado />
-      <div className="contenedorForm">
-        <div className=""></div>
-          <Tabs />
-        <div className=""></div>
-      </div>
+      <AppRouter />
     </>
   )
 }

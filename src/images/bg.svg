@@ -1,1 +1,27 @@
-<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 478.16"><defs><style>.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{fill:#3b2059;}</style><clipPath id="clip-path"><rect class="cls-1" x="-1.16" y="-2.05" width="325" height="480.22"/></clipPath></defs><title>bg</title><g class="cls-2"><polygon class="cls-3" points="-2.55 352.62 64.99 213.34 155.49 389.65 106.59 389.65 65.72 312.69 -2.55 447.73 -2.55 352.62"/><polygon class="cls-3" points="129.21 432.49 175.92 432.49 200.1 478.16 151.11 478.16 129.21 432.49"/><path class="cls-3" d="M376.86,151.7C283.45,151.7,207.75,227,207.75,320s75.71,168.24,169.12,168.24S546,412.87,546,320,470.26,151.7,376.86,151.7Zm9.6,287c-65.91,0-119.34-53.12-119.36-118.68s53.41-118.72,119.31-118.73,119.34,53.12,119.35,118.68v0c0,65.55-53.42,118.69-119.32,118.7Z"/><polygon class="cls-3" points="35.68 -2.43 35.68 13.26 227.69 185.4 227.69 -2.43 188.35 -2.43 188.35 91.49 81.77 -2.43 35.68 -2.43"/></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 320 478.2" style="enable-background:new 0 0 320 478.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);}
+	.st1{fill:#3B2877;}
+	.st2{fill:#3B2059;}
+</style>
+<title>bg</title>
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="-1.2" y="-2.1" width="325" height="480.2"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="st0">
+		<polygon class="st1" points="-2.5,352.6 65,213.3 155.5,389.6 106.6,389.6 65.7,312.7 -2.5,447.7 		"/>
+		<polygon class="st2" points="129.2,432.5 175.9,432.5 200.1,478.2 151.1,478.2 		"/>
+		<path class="st1" d="M376.9,151.7c-93.4,0-169.1,75.3-169.1,168.3s75.7,168.2,169.1,168.2S546,412.9,546,320
+			S470.3,151.7,376.9,151.7z M386.5,438.7c-65.9,0-119.3-53.1-119.4-118.7s53.4-118.7,119.3-118.7S505.7,254.4,505.8,320l0,0
+			C505.8,385.5,452.3,438.7,386.5,438.7L386.5,438.7z"/>
+		<polygon class="st1" points="35.7,-2.4 35.7,13.3 227.7,185.4 227.7,-2.4 188.4,-2.4 188.4,91.5 81.8,-2.4 		"/>
+	</g>
+</g>
+</svg>

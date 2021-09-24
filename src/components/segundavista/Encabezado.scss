@@ -1,0 +1,10 @@
+.contenedorEnc{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    .contItemsImg{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
